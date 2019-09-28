@@ -82,8 +82,9 @@ namespace BGame.Common
         {
             if (!GAttr.IsAttrType(attrId)) return 0;
 
-            var valueAttr = (T)Enum.ToObject(ATTR_TYPE, Convert.ToInt32(attrId) + GAttr.ATTR_ID_ABL);
-            var percentAttr = (T)Enum.ToObject(ATTR_TYPE, Convert.ToInt32(attrId) + GAttr.ATTR_ID_PCT);
+            var attrIdIndex = Convert.ToInt32(attrId);
+            var valueAttr = (T)Enum.ToObject(ATTR_TYPE, attrIdIndex + GAttr.ATTR_ID_ABL);
+            var percentAttr = (T)Enum.ToObject(ATTR_TYPE, attrIdIndex + GAttr.ATTR_ID_PCT);
 
             return baseAttr[valueAttr] * (1.0f + baseAttr[percentAttr] / 100.0f);
         }
