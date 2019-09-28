@@ -5,15 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="bestan">
-      <HintPath>..\..\DLLSource\netstandard2.0\bestan.dll</HintPath>
-    </Reference>
-    <Reference Include="bestan-lua">
-      <HintPath>..\..\DLLSource\netstandard2.0\bestan-lua.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>..\..\DLLSource\netstandard2.0\Google.Protobuf.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
