@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLua" Version="1.4.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameCommon\GameCommon.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="bestan">
+      <HintPath>..\..\DLLSource\Debug\netstandard2.0\bestan.dll</HintPath>
+    </Reference>
+    <Reference Include="bestan-lua">
+      <HintPath>..\..\DLLSource\Debug\netstandard2.0\bestan-lua.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

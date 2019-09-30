@@ -43,5 +43,12 @@ namespace BGame.Common
         {
             return Math.Abs(src - dst) <= PRECISION;
         }
+
+        public static T GetAttrType<T>(T attrId) where T : Enum
+        {
+            var value = Convert.ToInt32(attrId);
+            value = value - value % 10;
+            return (T)Enum.ToObject(AttrManager<T>.ATTR_TYPE, value);
+        }
     }
 }
